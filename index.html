@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard.O Grading System</title>
+    <link rel="shortcut icon" href="/img/1658083887039.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <center>
+        <div class="container">
+            <div>
+                <marquee behavior="" direction=""><h3 class="header">WELCOME!!</h3></marquee>
+            </div>
+            <div class="grade">
+                <h1>GRADING SYSTEM</h1>
+            </div>
+            <div>
+                <input type="text" name="" id="inputScore" placeholder="Input Your Score">
+            </div>
+            <div id="grade"></div>
+            <div>
+                <button onclick="check()">CHECK SCORE</button>
+            </div>
+        </div>
+    </center>
+    <script>
+        var maxScore = 100
+        function check(){
+            var scoreInput = Number(inputScore.value)
+            if(scoreInput <=100 && scoreInput >=70){
+                // alert("Na A you score")
+                grade.innerHTML = "<h2>A</h2> <h3>EXELLENT😎</h3>"
+            }
+            else if(scoreInput <=69 && scoreInput >=60){
+                // alert("Na B you score")
+                grade.innerHTML = "<h2>B</h2> <h3>GOOD🙂</h3>"
+            }
+            else if(scoreInput <=59 && scoreInput >=50){
+                // alert("Na C you score")
+                grade.innerHTML = "<h2>C</h2> <h3>AVERAGE👍</h3>"
+            }
+            else if(scoreInput <=49 && scoreInput >=45){
+                // alert("Na D you score")
+                grade.innerHTML = "<h2>D</h2> <h3>PASS✌</h3>"
+            }
+            else if(scoreInput <=44 && scoreInput >=35){
+                // alert("Na E you score")
+                grade.innerHTML = "<h2>E</h2> <h3>POOR🙁</h3>"
+            }
+            else if(scoreInput <=34 && scoreInput >=1){
+                // alert("Na F you score")
+                grade.innerHTML = "<h2>F</h2> <h3>FAIL😞</h3>"
+            }
+            else if(scoreInput>100 || scoreInput<0){
+                grade.innerHTML = "<h3>🙄</h3>"
+            }
+            else{
+                grade.innerHTML = "<h3>INVALID</h3>"
+            }
+        }
+    </script>
+</body>
+</html>

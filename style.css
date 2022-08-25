@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(126, 126, 226);
+}
+.container{
+    max-width: 500px;
+    max-height: fit-content;
+    margin-top: 25px;
+    padding: 50px;
+    box-shadow: 2px 2px 20px 2px rgb(102, 102, 197);
+}
+.header{
+    color: rgb(27, 27, 121);
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    font-style: italic;
+}
+.grade{
+    color: rgb(27, 27, 121);
+    font-weight: 900;
+    letter-spacing: 0.3em;
+}
+#inputScore{
+    color: rgb(27, 27, 121);
+    border: 1px solid rgb(27, 27, 121, 70%);
+    box-shadow: 2px 2px 50px 2px rgb(102, 102, 197);
+    width: 200px;
+    margin-top: 10px;
+    font-size: 1.5em;
+    padding: 20px; 
+    font-weight: 900;
+}
+#inputScore::placeholder{
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+#grade{
+    border: 2px solid rgb(102, 102, 197);
+    max-width: 200px;
+    align-content: center;
+    margin-top: 10px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+button{
+    color: rgb(27, 27, 121);
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 900;
+    margin-top: 10px;
+    border: 1px solid;
+    box-shadow: 2px 2px 0px 2px rgb(27, 27, 121);
+    border-radius: 25px;
+    
+}
+button:hover{
+    border: 1px dotted;
+}
